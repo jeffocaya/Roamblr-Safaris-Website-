@@ -3,1078 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roamblr Safaris - Uganda ground handling & safari experiences. Gorilla trekking, wildlife safaris, and custom Uganda tours for agencies and direct travelers.">
+    <meta name="keywords" content="Uganda safaris, gorilla trekking, Uganda travel, ground handling, Bwindi, Murchison Falls">
+    <meta name="author" content="Roamblr Safaris">
+    <title>Roamblr Safaris | Uganda Safari Experiences & Ground Handling</title>
     
-    <!-- SEO Meta Tags -->
-    <title>Roamblr Safaris | Uganda Safari Experiences — Gorilla Trekking & Ground Handling</title>
-    <meta name="description" content="Roamblr Safaris — Kampala-based Uganda ground handling and safari experiences. Gorilla trekking permits, multi-park safaris, family adventures, and corporate retreats. Built from genuine curiosity about Uganda.">
-    <meta name="keywords" content="Uganda safaris, gorilla trekking Uganda, Bwindi gorilla permits, Kampala tour operator, Uganda ground handling, Uganda family safaris, Uganda corporate retreats">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Roamblr Safaris — Uganda Safari Experiences">
-    <meta property="og:description" content="Uganda safaris born from a Saturday morning curiosity. Gorilla trekking, wildlife adventures, and ground handling for agencies.">
-    <meta property="og:image" content="https://roamblr.com/assets/images/og-image.jpg">
-    <meta property="og:url" content="https://roamblr.com">
-    <meta property="og:type" content="website">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
     
-    <!-- Tailwind CSS via CDN with Custom Config -->
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    
+    <!-- Tailwind Config Override -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'roamblr-green': {
-                            50: '#e8f5e9',
-                            100: '#c8e6c9',
-                            200: '#a5d6a7',
-                            300: '#81c784',
-                            400: '#66bb6a',
-                            500: '#1B5E20',
-                            600: '#164d1a',
-                            700: '#113d15',
-                            800: '#0d2e10',
-                            900: '#081f0b',
-                        },
-                        'roamblr-amber': {
-                            50: '#fff8e1',
-                            100: '#ffecb3',
-                            200: '#ffe082',
-                            300: '#ffd54f',
-                            400: '#ffca28',
-                            500: '#FF8F00',
-                            600: '#e67e00',
-                            700: '#cc6e00',
-                            800: '#b35d00',
-                            900: '#994d00',
-                        },
-                        'roamblr-earth': {
-                            50: '#faf7f4',
-                            100: '#f5f0eb',
-                            200: '#e8ddd3',
-                            300: '#d4c4b5',
-                            500: '#8B7355',
-                            700: '#5c4a37',
-                            800: '#4A3728',
-                            900: '#2c1f15',
-                        },
-                        'roamblr-sand': '#F5F0EB',
-                        'roamblr-cream': '#FAF7F4',
+                        primary: '#1B5E20',
+                        'primary-dark': '#0D3B0F',
+                        accent: '#FF8F00',
                     },
                     fontFamily: {
-                        'display': ['"Playfair Display"', 'Georgia', 'serif'],
-                        'body': ['"Inter"', 'system-ui', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
                     },
                     animation: {
-                        'fade-in': 'fadeIn 0.8s ease-out forwards',
-                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                        'fade-in-delay': 'fadeIn 0.8s ease-out 0.3s forwards',
-                        'fade-in-delay-2': 'fadeIn 0.8s ease-out 0.6s forwards',
-                        'float': 'float 3s ease-in-out infinite',
-                        'slide-in-right': 'slideInRight 0.6s ease-out forwards',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
                     },
                     keyframes: {
                         fadeIn: {
                             '0%': { opacity: '0' },
                             '100%': { opacity: '1' },
                         },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
                         },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        },
-                        slideInRight: {
-                            '0%': { opacity: '0', transform: 'translateX(30px)' },
-                            '100%': { opacity: '1', transform: 'translateX(0)' },
-                        },
-                    },
+                    }
                 }
             }
         }
     </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-
-    <!-- Custom Styles -->
-    <style>
-        /* Smooth scroll behavior */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Custom text balance for headings */
-        .text-balance {
-            text-wrap: balance;
-        }
-
-        /* Gradient overlay for hero */
-        .hero-gradient {
-            background: linear-gradient(
-                135deg,
-                rgba(13, 46, 16, 0.85) 0%,
-                rgba(13, 46, 16, 0.6) 40%,
-                rgba(27, 94, 32, 0.3) 70%,
-                rgba(0, 0, 0, 0.2) 100%
-            );
-        }
-
-        /* Subtle card hover effect */
-        .card-hover {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(13, 46, 16, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        /* Line clamp for text truncation */
-        .line-clamp-2 {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        /* WhatsApp pulse animation */
-        .whatsapp-pulse {
-            animation: whatsappPulse 2s ease-in-out infinite;
-        }
-        @keyframes whatsappPulse {
-            0%, 100% {
-                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4);
-            }
-            50% {
-                box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
-            }
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FAF7F4;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1B5E20;
-            border-radius: 4px;
-        }
-
-        /* Mobile menu transition */
-        .mobile-menu {
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-        .mobile-menu.hidden {
-            transform: translateY(-10px);
-            opacity: 0;
-            pointer-events: none;
-        }
-        .mobile-menu.visible {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        /* Tab active indicator */
-        .tab-active {
-            position: relative;
-        }
-        .tab-active::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: #FF8F00;
-            border-radius: 3px 3px 0 0;
-        }
-
-        /* Image lazy load fade */
-        img.lazy-loaded {
-            animation: fadeIn 0.5s ease-out;
-        }
-    </style>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231B5E20'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='52' font-weight='700' fill='%23FF8F00'>R</text></svg>">
 </head>
-<body class="font-body antialiased text-roamblr-earth-900 bg-roamblr-cream">
+<body class="font-inter antialiased">
 
-    <!-- ===== NAVIGATION ===== -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-shadow duration-300" id="mainNav">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 lg:h-20">
-                
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
-                    <div class="w-10 h-10 bg-roamblr-green-500 rounded-lg flex items-center justify-center">
-                        <span class="font-display text-2xl font-bold text-roamblr-amber-500 leading-none">R</span>
-                    </div>
-                    <div class="hidden sm:block">
-                        <span class="font-display text-xl font-bold text-roamblr-green-500 leading-tight">Roamblr</span>
-                        <span class="block text-xs text-roamblr-earth-500 leading-tight tracking-wider">SAFARIS</span>
-                    </div>
-                </a>
+    <!-- Header Component -->
+    <div id="header"></div>
 
-                <!-- Desktop Navigation -->
-                <div class="hidden lg:flex items-center gap-1">
-                    <a href="index.html" class="px-3 py-2 text-sm font-medium text-roamblr-green-500 bg-roamblr-green-50 rounded-lg transition-colors">Home</a>
-                    <a href="about.html" class="px-3 py-2 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">About</a>
-                    <a href="packages.html" class="px-3 py-2 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">Packages</a>
-                    <a href="travel-guide.html" class="px-3 py-2 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">Travel Guide</a>
-                    <a href="for-agents.html" class="px-3 py-2 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">For Agents</a>
-                </div>
-
-                <!-- Desktop CTA -->
-                <div class="hidden lg:flex items-center gap-3">
-                    <a href="contact.html" class="px-4 py-2.5 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors shadow-sm hover:shadow-md">
-                        Start Your Adventure
-                    </a>
-                    <a href="https://wa.me/256XXXXXXXXX?text=Hi%20Roamblr%2C%20I'm%20interested%20in%20a%20safari" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-2.5 text-sm font-medium text-roamblr-green-500 hover:text-roamblr-green-600 border border-roamblr-green-200 hover:border-roamblr-green-300 rounded-lg transition-colors">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        WhatsApp
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-roamblr-earth-700 hover:bg-roamblr-earth-100 transition-colors" aria-label="Toggle menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path id="menuIconOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        <path id="menuIconClose" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="lg:hidden mobile-menu hidden bg-white border-t border-roamblr-earth-100 shadow-lg">
-            <div class="px-4 py-3 space-y-1">
-                <a href="index.html" class="block px-3 py-2.5 text-sm font-medium text-roamblr-green-500 bg-roamblr-green-50 rounded-lg">Home</a>
-                <a href="about.html" class="block px-3 py-2.5 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">About</a>
-                <a href="packages.html" class="block px-3 py-2.5 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">Packages</a>
-                <a href="travel-guide.html" class="block px-3 py-2.5 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">Travel Guide</a>
-                <a href="for-agents.html" class="block px-3 py-2.5 text-sm font-medium text-roamblr-earth-700 hover:text-roamblr-green-500 hover:bg-roamblr-green-50 rounded-lg transition-colors">For Agents</a>
-                <div class="pt-3 border-t border-roamblr-earth-100 space-y-2">
-                    <a href="contact.html" class="block w-full text-center px-4 py-2.5 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                        Start Your Adventure
-                    </a>
-                    <a href="https://wa.me/256XXXXXXXXX" target="_blank" rel="noopener" class="block w-full text-center px-4 py-2.5 text-sm font-medium text-roamblr-green-500 hover:text-roamblr-green-600 border border-roamblr-green-200 rounded-lg transition-colors">
-                        WhatsApp Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ===== HERO SECTION ===== -->
-    <section class="relative min-h-screen flex items-center overflow-hidden">
-        <!-- Hero Background Image -->
-        <!-- TODO: Replace with Jeff's photo of Bwindi or Kabaka's Lake -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1547471080-5cbc00b6c129?q=80&w=2000&auto=format&fit=crop');">
-        </div>
-        
-        <!-- Gradient Overlay -->
-        <div class="absolute inset-0 hero-gradient"></div>
-
-        <!-- Content -->
-        <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
-            <div class="max-w-3xl">
-                <!-- Trust Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white/90 text-sm mb-8 animate-fade-in">
-                    <svg class="w-4 h-4 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                    <span>UTB Licensed Tour Operator</span>
-                </div>
-
-                <!-- Main Headline -->
-                <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight text-balance mb-6 animate-fade-in-up">
-                    Uganda Safaris,<br>
-                    <span class="text-roamblr-amber-400">Born from a Saturday</span><br>
-                    <span class="text-roamblr-amber-400">Morning Curiosity</span>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen min-h-[600px] flex items-center justify-center bg-cover bg-center bg-no-repeat" 
+                 style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1547471080-7cc2caa01ec2?w=1600&h=900&fit=crop');">
+            <div class="container-custom text-center text-white">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in font-playfair">
+                    Discover Uganda with<br>Roamblr Safaris
                 </h1>
-
-                <!-- Subheadline -->
-                <p class="text-lg sm:text-xl text-white/80 leading-relaxed max-w-2xl mb-10 animate-fade-in-delay text-balance">
-                    What started as solo micro-adventures through Kampala became Roamblr Safaris — 
-                    a ground handling company connecting international travelers and Ugandan families 
-                    to the extraordinary wildlife and landscapes of the Pearl of Africa.
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto animate-slide-up">
+                    Expertly coordinated Uganda safari experiences — from gorilla trekking in Bwindi to weekend getaways for Ugandan families.
                 </p>
-
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-delay-2">
-                    <a href="packages.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-roamblr-amber-500 hover:bg-roamblr-amber-600 text-white font-semibold text-lg rounded-xl transition-all shadow-lg hover:shadow-xl hover:shadow-roamblr-amber-500/25 transform hover:-translate-y-0.5">
-                        Explore Our Packages
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </a>
-                    <a href="about.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold text-lg rounded-xl border border-white/30 transition-all">
-                        Read the Story
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                    </a>
-                </div>
-
-                <!-- Quick Stats -->
-                <div class="grid grid-cols-3 gap-8 mt-16 pt-12 border-t border-white/20 animate-fade-in-delay-2">
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-display font-bold text-roamblr-amber-400">30+</div>
-                        <div class="text-sm text-white/70 mt-1">Safari<br>Experiences</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-display font-bold text-roamblr-amber-400">100%</div>
-                        <div class="text-sm text-white/70 mt-1">Ugandan<br>Owned & Guided</div>
-                    </div>
-                    <div>
-                        <div class="text-3xl sm:text-4xl font-display font-bold text-roamblr-amber-400">24h</div>
-                        <div class="text-sm text-white/70 mt-1">Response<br>Guaranteed</div>
-                    </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
+                    <a href="packages.html" class="btn-primary">Explore Packages</a>
+                    <a href="contact.html" class="btn-outline bg-transparent border-white text-white hover:bg-white hover:text-primary">Get a Quote</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
-            <div class="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
-                <div class="w-1.5 h-1.5 bg-white/60 rounded-full mt-2 animate-bounce"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== WHO WE ARE SECTION ===== -->
-    <section class="py-20 lg:py-28 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Featured Packages Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container-custom">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Featured Safari Experiences</h2>
+                    <p class="section-subtitle">Hand-crafted Uganda adventures for every traveler — from budget-friendly getaways to luxury gorilla treks.</p>
+                </div>
                 
-                <!-- Image Column -->
-                <div class="relative">
-                    <!-- TODO: Replace with Jeff's photo -->
-                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" alt="Jeff Ocaya - Founder of Roamblr Safaris" class="w-full h-[500px] object-cover lazy-loaded" loading="lazy">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Package 1: Gorilla Express -->
+                    <div class="card animate-on-scroll" data-category="gorilla">
+                        <img src="https://images.unsplash.com/photo-1540412430557-d0e7437fb7ab?w=600&h=400&fit=crop" alt="Mountain gorilla in Bwindi" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-gray-800">Gorilla Express</h3>
+                                <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">Premium</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">3-day Bwindi gorilla trekking experience. Includes permits, lodging, and professional guide.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold text-xl">$3,325</span>
+                                <a href="package-detail.html?package=gorilla" class="text-primary font-semibold hover:text-primary-dark">View Details →</a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Decorative Element -->
-                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-roamblr-amber-500/10 rounded-2xl -z-10"></div>
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-roamblr-green-500/10 rounded-2xl -z-10"></div>
+                    
+                    <!-- Package 2: Murchison Falls Safari -->
+                    <div class="card animate-on-scroll" data-category="safari">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01ec2?w=600&h=400&fit=crop" alt="Murchison Falls" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-gray-800">Murchison Falls Safari</h3>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">Core</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">4-day adventure to Uganda's largest national park. Nile cruise, game drives, and epic waterfalls.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold text-xl">$1,200</span>
+                                <a href="package-detail.html?package=murchison" class="text-primary font-semibold hover:text-primary-dark">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 3: Lake Mburo Weekend -->
+                    <div class="card animate-on-scroll" data-category="weekend">
+                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop" alt="Zebras in Lake Mburo" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-gray-800">Lake Mburo Weekend</h3>
+                                <span class="bg-gray-600 text-white px-3 py-1 rounded-full text-sm font-semibold">Weekend</span>
+                            </div>
+                            <p class="text-gray-600 mb-4">2-night getaway perfect for Kampala residents. Zebras, impalas, and boat cruise.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-primary font-bold text-xl">UGX 900k</span>
+                                <a href="package-detail.html?package=mburo" class="text-primary font-semibold hover:text-primary-dark">View Details →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="text-center mt-12 animate-on-scroll">
+                    <a href="packages.html" class="btn-outline">View All Packages →</a>
+                </div>
+            </div>
+        </section>
 
-                <!-- Text Column -->
-                <div>
-                    <span class="inline-block text-roamblr-amber-500 font-semibold text-sm tracking-wider uppercase mb-3">Who We Are</span>
-                    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-roamblr-green-500 leading-tight mb-6 text-balance">
-                        From Solo Saturdays<br>to Safari Company
-                    </h2>
-                    <div class="space-y-4 text-roamblr-earth-700 leading-relaxed">
-                        <p class="text-lg">
-                            When Jeff Ocaya moved from Kitgum to Kampala, he started doing something simple: 
-                            every Saturday, he'd follow a random road until he found something interesting.
-                        </p>
-                        <p>
-                            Those solo micro-adventures — Rubaga Cathedral, Kabaka's Lake, Buziga Hill, 
-                            the shores of Lake Victoria — weren't a business plan. They were just curiosity. 
-                            But when friends saw his photos and started asking "where should I go?" a 
-                            business was born.
-                        </p>
-                        <p>
-                            Roamblr Safaris is the professional answer to that question. We're a Kampala-based 
-                            ground handling company serving international tour agencies, Ugandan families, 
-                            honeymooners, school groups, and corporate teams.
-                        </p>
+        <!-- Why Choose Us Section -->
+        <section class="py-16 md:py-24">
+            <div class="container-custom">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="section-title">Why Choose Roamblr Safaris</h2>
+                    <p class="section-subtitle">We're not just another tour operator. Here's what makes us different.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-6 animate-on-scroll">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">24-Hour Response</h3>
+                        <p class="text-gray-600">Every inquiry answered within 24 hours. No exceptions.</p>
                     </div>
-                    <div class="mt-8 flex flex-wrap gap-3">
-                        <a href="about.html" class="inline-flex items-center gap-2 px-6 py-3 bg-roamblr-green-500 hover:bg-roamblr-green-600 text-white font-semibold rounded-lg transition-colors shadow-sm">
-                            Read the Full Story
-                        </a>
-                        <a href="https://wa.me/256XXXXXXXXX" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-roamblr-green-200 hover:border-roamblr-green-300 text-roamblr-green-500 font-semibold rounded-lg transition-colors">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+                    
+                    <div class="text-center p-6 animate-on-scroll">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Local Expertise</h3>
+                        <p class="text-gray-600">Born and based in Uganda. We know these roads personally.</p>
+                    </div>
+                    
+                    <div class="text-center p-6 animate-on-scroll">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Sustainable Tourism</h3>
+                        <p class="text-gray-600">Community experiences built into every multi-day package.</p>
+                    </div>
+                    
+                    <div class="text-center p-6 animate-on-scroll">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Safe & Reliable</h3>
+                        <p class="text-gray-600">Vetted drivers, backup plans, and 24/7 support during your trip.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16 md:py-24 bg-primary text-white">
+            <div class="container-custom">
+                <div class="text-center mb-12 animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Travelers Say</h2>
+                    <p class="text-lg text-primary/90">Real experiences from real clients</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-on-scroll">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-white/90 mb-4">"Jeff organized an incredible gorilla trek for our group. Everything was seamless — permits, lodging, transport. Will definitely use Roamblr again."</p>
+                        <div>
+                            <p class="font-semibold">Sarah Mitchell</p>
+                            <p class="text-sm text-white/70">United Kingdom</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-on-scroll">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-white/90 mb-4">"As a Ugandan living abroad, I wanted my kids to experience their heritage. Roamblr made it unforgettable — and affordable."</p>
+                        <div>
+                            <p class="font-semibold">David Ochieng</p>
+                            <p class="text-sm text-white/70">Diaspora (USA)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 animate-on-scroll">
+                        <div class="flex gap-1 mb-4">
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            <svg class="w-5 h-5 text-accent fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <p class="text-white/90 mb-4">"We partnered with Roamblr for our agency's Uganda program. Jeff's communication and execution are flawless. Highly recommend."</p>
+                        <div>
+                            <p class="font-semibold">Mark Williams</p>
+                            <p class="text-sm text-white/70">Travel Agency, Germany</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 md:py-24">
+            <div class="container-custom">
+                <div class="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-8 md:p-12 text-center text-white animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Uganda?</h2>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Let us handle every detail — from gorilla permits to lodge bookings. Your adventure starts here.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="btn-accent">Request a Quote</a>
+                        <a href="https://wa.me/256XXXXXXXXX" target="_blank" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.91-9.91-9.91zm0 18.25c-1.51 0-2.99-.41-4.27-1.18l-.31-.18-3.11.82.83-3.02-.2-.33c-.85-1.36-1.3-2.92-1.3-4.53 0-4.58 3.73-8.3 8.31-8.3 4.58 0 8.31 3.72 8.31 8.3 0 4.58-3.73 8.31-8.31 8.31z"/></svg>
                             Chat on WhatsApp
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- ===== TRUST BAR ===== -->
-    <section class="py-8 bg-roamblr-green-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-16">
-                <div class="flex items-center gap-3 text-white/90">
-                    <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                    <span class="text-sm font-medium">UTB Licensed Operator</span>
-                </div>
-                <div class="flex items-center gap-3 text-white/90">
-                    <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                    <span class="text-sm font-medium">URSB Registered</span>
-                </div>
-                <div class="flex items-center gap-3 text-white/90">
-                    <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
-                    <span class="text-sm font-medium">AUTO Member</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Footer Component -->
+    <div id="footer"></div>
 
-    <!-- ===== EXPERIENCES FOR EVERYONE SECTION ===== -->
-    <section class="py-20 lg:py-28 bg-roamblr-cream">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-roamblr-amber-500 font-semibold text-sm tracking-wider uppercase mb-3">Our Experiences</span>
-                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-roamblr-green-500 mb-6 text-balance">
-                    An Adventure for Every<br>Kind of Traveler
-                </h2>
-                <p class="text-lg text-roamblr-earth-600 leading-relaxed">
-                    Whether you're traveling from another continent, planning a Ugandan family getaway, 
-                    or organizing a corporate retreat — we've designed experiences that fit.
-                </p>
-            </div>
+    <!-- WhatsApp Float Button -->
+    <div id="whatsapp-button"></div>
 
-            <!-- Experience Tabs -->
-            <div class="flex flex-wrap justify-center gap-2 mb-12" role="tablist">
-                <button onclick="switchTab('international')" id="tab-international" class="tab-active px-6 py-3 text-sm font-semibold text-roamblr-green-500 bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-                    🌍 International Traveler
-                </button>
-                <button onclick="switchTab('local')" id="tab-local" class="px-6 py-3 text-sm font-semibold text-roamblr-earth-600 bg-white/60 hover:bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-                    🇺🇬 Ugandan Family
-                </button>
-                <button onclick="switchTab('corporate')" id="tab-corporate" class="px-6 py-3 text-sm font-semibold text-roamblr-earth-600 bg-white/60 hover:bg-white rounded-xl shadow-sm hover:shadow-md transition-all">
-                    💼 Corporate Team
-                </button>
-            </div>
-
-            <!-- Tab Content: International -->
-            <div id="content-international" class="tab-content grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Package Card: Gorilla Express -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <!-- TODO: Replace with Jeff's gorilla photo -->
-                        <img src="https://images.unsplash.com/photo-1587017539822-48b05f3ff203?q=80&w=800&auto=format&fit=crop" alt="Mountain gorilla in Bwindi Impenetrable Forest" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 left-4 px-3 py-1.5 bg-roamblr-amber-500 text-white text-xs font-semibold rounded-full">
-                            Best Seller
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>3 Days / 2 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Gorilla Express</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            The ultimate bucket-list experience. Trek through Bwindi's ancient forest to spend one hour with a mountain gorilla family.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">$1,590</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/gorilla-express.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Package Card: Murchison Falls Safari -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1621849400072-f281c7e2c1f1?q=80&w=800&auto=format&fit=crop" alt="Murchison Falls" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>4 Days / 3 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Murchison Falls Explorer</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Witness the Nile squeeze through a 7-meter gorge. Game drives, boat cruise, and the world's most powerful waterfall.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">$980</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/murchison-falls-safari.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Package Card: Uganda Grand Circuit -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=800&auto=format&fit=crop" alt="Uganda wildlife safari" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>10 Days / 9 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Uganda Grand Circuit</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            The complete Uganda experience. Murchison, Kibale, Queen Elizabeth, Bwindi, and Lake Bunyonyi in one epic journey.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">$3,200</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/uganda-grand-circuit.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Tab Content: Local (Hidden by Default) -->
-            <div id="content-local" class="tab-content hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Lake Mburo Family Safari -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=800&auto=format&fit=crop" alt="Ugandan family on safari" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>3 Days / 2 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Lake Mburo Family Safari</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Perfect for children 5+. Zebras, giraffes, boat cruise, and nature walks in Uganda's most accessible park.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 900K</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/lake-mburo-family.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Lake Bunyonyi Honeymoon -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop" alt="Lake Bunyonyi" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 left-4 px-3 py-1.5 bg-pink-500 text-white text-xs font-semibold rounded-full">
-                            Honeymoon
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>3 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Lake Bunyonyi Honeymoon</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Private island cottage, sunset canoe rides, candlelit dinners. Uganda's most romantic destination, curated for two.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 2.8M</div>
-                                <span class="text-xs text-roamblr-earth-500">per couple</span>
-                            </div>
-                            <a href="packages/lake-bunyonyi-honeymoon.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Jinja Day Trip -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1505159940484-6c92934b048b?q=80&w=800&auto=format&fit=crop" alt="Source of the Nile Jinja" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>1 Day</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Jinja Adventure Day</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Source of the Nile, white water rafting, and the perfect weekend escape from Kampala for families and groups.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 180K</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/jinja-day-trip.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                View Safari
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Tab Content: Corporate (Hidden by Default) -->
-            <div id="content-corporate" class="tab-content hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Team Building Half Day -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden bg-roamblr-green-100 flex items-center justify-center">
-                        <div class="text-center p-8">
-                            <div class="text-6xl mb-4">🏕️</div>
-                            <p class="text-roamblr-green-500 font-semibold">Team Building</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>Half Day / Full Day</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Kampala Team Building</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Half-day or full-day facilitated team experiences within Kampala. Activities, catering, and transport included.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 80K</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/corporate-retreats.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Lake Mburo Corporate Retreat -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1601972593653-2f5e45f541df?q=80&w=800&auto=format&fit=crop" alt="Corporate retreat in nature" class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>2-3 Nights</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Lake Mburo Corporate Retreat</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Leadership retreats and incentive trips. Combine strategy sessions with game drives, boat cruises, and bush dinners.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 600K</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/corporate-retreats.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Annual Incentive Safari -->
-                <article class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=800&auto=format&fit=crop" alt="Incentive safari" class="w-full h-full object-cover" loading="lazy">
-                        <div class="absolute top-4 left-4 px-3 py-1.5 bg-roamblr-amber-500 text-white text-xs font-semibold rounded-full">
-                            Premium
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 text-sm text-roamblr-earth-500 mb-2">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            <span>3-5 Days</span>
-                        </div>
-                        <h3 class="font-display text-xl font-bold text-roamblr-green-500 mb-2">Annual Incentive Safari</h3>
-                        <p class="text-roamblr-earth-600 text-sm leading-relaxed mb-4 line-clamp-2">
-                            Top performer rewards. Multi-park safari with gorilla trekking option. Premium lodges, private vehicles, exclusive experiences.
-                        </p>
-                        <div class="flex items-center justify-between pt-4 border-t border-roamblr-earth-100">
-                            <div>
-                                <span class="text-xs text-roamblr-earth-500">From</span>
-                                <div class="text-2xl font-bold text-roamblr-green-500">UGX 2M</div>
-                                <span class="text-xs text-roamblr-earth-500">per person</span>
-                            </div>
-                            <a href="packages/corporate-retreats.html" class="px-4 py-2 text-sm font-semibold text-white bg-roamblr-green-500 hover:bg-roamblr-green-600 rounded-lg transition-colors">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- View All Packages -->
-            <div class="text-center mt-12">
-                <a href="packages.html" class="inline-flex items-center gap-2 px-8 py-4 bg-roamblr-green-500 hover:bg-roamblr-green-600 text-white font-semibold rounded-xl transition-colors shadow-sm hover:shadow-md">
-                    View All Packages
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS SECTION ===== -->
-    <section class="py-20 lg:py-28 bg-roamblr-green-500 relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <pattern id="dots" patternUnits="userSpaceOnUse" width="20" height="20">
-                    <circle cx="10" cy="10" r="1.5" fill="white"/>
-                </pattern>
-                <rect width="100" height="100" fill="url(#dots)"/>
-            </svg>
-        </div>
-
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <span class="inline-block text-roamblr-amber-400 font-semibold text-sm tracking-wider uppercase mb-3">Testimonials</span>
-                <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">
-                    What Our Travelers Say
-                </h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
-                    <div class="flex gap-1 mb-4">
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <blockquote class="text-white/90 leading-relaxed mb-6">
-                        "The gorilla trekking experience was absolutely life-changing. Our guide knew exactly where to find the family, and every detail was handled perfectly."
-                    </blockquote>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-roamblr-amber-500 flex items-center justify-center text-white font-bold text-sm">SJ</div>
-                        <div>
-                            <div class="text-white font-semibold text-sm">Sarah J.</div>
-                            <div class="text-white/60 text-xs">United Kingdom</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
-                    <div class="flex gap-1 mb-4">
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <blockquote class="text-white/90 leading-relaxed mb-6">
-                        "As a Ugandan, I didn't realize how much beauty we have. Roamblr made our family trip to Murchison Falls feel like a real adventure — my kids still talk about it."
-                    </blockquote>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-roamblr-amber-500 flex items-center justify-center text-white font-bold text-sm">AN</div>
-                        <div>
-                            <div class="text-white font-semibold text-sm">Andrew N.</div>
-                            <div class="text-white/60 text-xs">Kampala, Uganda</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8">
-                    <div class="flex gap-1 mb-4">
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                        <svg class="w-5 h-5 text-roamblr-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                    </div>
-                    <blockquote class="text-white/90 leading-relaxed mb-6">
-                        "Jeff's response time is incredible. I emailed at 10pm my time and had a full quote by the next morning. Our agency has been using Roamblr as our Uganda ground handler ever since."
-                    </blockquote>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-roamblr-amber-500 flex items-center justify-center text-white font-bold text-sm">MK</div>
-                        <div>
-                            <div class="text-white font-semibold text-sm">Maria K.</div>
-                            <div class="text-white/60 text-xs">Travel Agent, Germany</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== B2B AGENCY CTA ===== -->
-    <section class="py-16 lg:py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="bg-roamblr-earth-50 border border-roamblr-earth-200 rounded-2xl p-8 sm:p-12">
-                <span class="inline-block text-roamblr-amber-500 font-semibold text-sm tracking-wider uppercase mb-3">For Travel Agencies</span>
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-roamblr-green-500 mb-4 text-balance">
-                    A Reliable Uganda Ground Handler
-                </h2>
-                <p class="text-lg text-roamblr-earth-600 leading-relaxed mb-8 max-w-2xl mx-auto">
-                    Net rates, 24-hour quote turnaround, direct UWA gorilla permit booking, 
-                    and a partner who answers the phone when things go wrong. 
-                    Let's discuss how Roamblr can support your East Africa itineraries.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="for-agents.html" class="inline-flex items-center gap-2 px-8 py-4 bg-roamblr-green-500 hover:bg-roamblr-green-600 text-white font-semibold rounded-xl transition-colors shadow-sm hover:shadow-md">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                        Download Net Rate Sheet
-                    </a>
-                    <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-roamblr-green-200 hover:border-roamblr-green-300 text-roamblr-green-500 font-semibold rounded-xl transition-colors">
-                        Become a Partner
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FINAL CTA BANNER ===== -->
-    <section class="py-20 lg:py-28 bg-roamblr-green-500 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <pattern id="dots2" patternUnits="userSpaceOnUse" width="20" height="20">
-                    <circle cx="10" cy="10" r="1.5" fill="white"/>
-                </pattern>
-                <rect width="100" height="100" fill="url(#dots2)"/>
-            </svg>
-        </div>
-        <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance">
-                Roamblr is ready.<br>Are you?
-            </h2>
-            <p class="text-lg text-white/80 mb-10 max-w-xl mx-auto">
-                Whether you're planning a gorilla trek, a family weekend, or a corporate retreat — 
-                we're here to make it extraordinary.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 bg-roamblr-amber-500 hover:bg-roamblr-amber-600 text-white font-bold text-lg rounded-xl transition-all shadow-xl hover:shadow-2xl hover:shadow-roamblr-amber-500/25 transform hover:-translate-y-0.5">
-                    Start Your Adventure
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                </a>
-                <a href="https://wa.me/256XXXXXXXXX?text=Hi%20Roamblr!%20I'd%20like%20to%20plan%20a%20safari." target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-bold text-lg rounded-xl border border-white/30 transition-all">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
-                    Chat on WhatsApp
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="bg-roamblr-earth-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
-                
-                <!-- Brand Column -->
-                <div class="lg:col-span-1">
-                    <a href="index.html" class="flex items-center gap-2 mb-4">
-                        <div class="w-10 h-10 bg-roamblr-amber-500 rounded-lg flex items-center justify-center">
-                            <span class="font-display text-2xl font-bold text-white leading-none">R</span>
-                        </div>
-                        <div>
-                            <span class="font-display text-xl font-bold text-white leading-tight">Roamblr</span>
-                            <span class="block text-xs text-roamblr-earth-300 leading-tight tracking-wider">SAFARIS</span>
-                        </div>
-                    </a>
-                    <p class="text-roamblr-earth-300 text-sm leading-relaxed mb-6">
-                        Uganda safari experiences built from genuine curiosity about the Pearl of Africa.
-                    </p>
-                    <div class="flex gap-3">
-                        <a href="#" class="w-9 h-9 rounded-lg bg-roamblr-earth-800 hover:bg-roamblr-amber-500 flex items-center justify-center transition-colors" aria-label="Instagram">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                        </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-roamblr-earth-800 hover:bg-roamblr-amber-500 flex items-center justify-center transition-colors" aria-label="TikTok">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-                        </a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-roamblr-earth-800 hover:bg-roamblr-amber-500 flex items-center justify-center transition-colors" aria-label="YouTube">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="font-display text-lg font-bold text-white mb-4">Quick Links</h3>
-                    <ul class="space-y-2.5">
-                        <li><a href="about.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">About Roamblr</a></li>
-                        <li><a href="packages.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Our Packages</a></li>
-                        <li><a href="travel-guide.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Uganda Travel Guide</a></li>
-                        <li><a href="for-agents.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">For Travel Agents</a></li>
-                        <li><a href="contact.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Popular Safaris -->
-                <div>
-                    <h3 class="font-display text-lg font-bold text-white mb-4">Popular Safaris</h3>
-                    <ul class="space-y-2.5">
-                        <li><a href="packages/gorilla-express.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Gorilla Express</a></li>
-                        <li><a href="packages/murchison-falls-safari.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Murchison Falls Explorer</a></li>
-                        <li><a href="packages/lake-bunyonyi-honeymoon.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Lake Bunyonyi Honeymoon</a></li>
-                        <li><a href="packages/lake-mburo-family.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Lake Mburo Family Safari</a></li>
-                        <li><a href="packages/corporate-retreats.html" class="text-roamblr-earth-300 hover:text-roamblr-amber-400 transition-colors text-sm">Corporate Retreats</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div>
-                    <h3 class="font-display text-lg font-bold text-white mb-4">Get in Touch</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            <span class="text-roamblr-earth-300 text-sm">jeff@roamblr.com</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            <span class="text-roamblr-earth-300 text-sm">+256 XXX XXX XXX</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg class="w-5 h-5 text-roamblr-amber-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                            <span class="text-roamblr-earth-300 text-sm">Kampala, Uganda</span>
-                        </li>
-                    </ul>
-                    <a href="https://wa.me/256XXXXXXXXX?text=Hi%20Roamblr!" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-lg transition-colors">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
-                        Chat on WhatsApp
-                    </a>
-                </div>
-            </div>
-
-            <!-- Bottom Bar -->
-            <div class="mt-12 pt-8 border-t border-roamblr-earth-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <p class="text-roamblr-earth-400 text-sm">
-                    &copy; <span id="currentYear">2026</span> Roamblr Safaris. All rights reserved.
-                </p>
-                <div class="flex gap-6">
-                    <a href="#" class="text-roamblr-earth-400 hover:text-roamblr-amber-400 text-sm transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-roamblr-earth-400 hover:text-roamblr-amber-400 text-sm transition-colors">Terms & Conditions</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-    <a href="https://wa.me/256XXXXXXXXX?text=Hi%20Roamblr!%20I'm%20interested%20in%20a%20safari." target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all whatsapp-pulse" aria-label="Chat on WhatsApp">
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
-    </a>
-
-    <!-- ===== JAVASCRIPT ===== -->
+    <!-- Scripts -->
     <script>
-        // ===== Mobile Menu Toggle =====
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuIconOpen = document.getElementById('menuIconOpen');
-        const menuIconClose = document.getElementById('menuIconClose');
-        let menuOpen = false;
-
-        mobileMenuBtn.addEventListener('click', () => {
-            menuOpen = !menuOpen;
-            if (menuOpen) {
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('visible');
-                menuIconOpen.classList.add('hidden');
-                menuIconClose.classList.remove('hidden');
-            } else {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('visible');
-                menuIconOpen.classList.remove('hidden');
-                menuIconClose.classList.add('hidden');
-            }
-        });
-
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobileMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                mobileMenu.classList.remove('visible');
-                menuIconOpen.classList.remove('hidden');
-                menuIconClose.classList.add('hidden');
-                menuOpen = false;
-            });
-        });
-
-        // ===== Tab Switching for Packages =====
-        function switchTab(tab) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('hidden');
-            });
-            
-            // Remove active state from all tabs
-            document.querySelectorAll('[role="tablist"] button').forEach(btn => {
-                btn.classList.remove('tab-active', 'text-roamblr-green-500', 'bg-white');
-                btn.classList.add('text-roamblr-earth-600', 'bg-white/60');
-            });
-            
-            // Show selected tab content
-            const contentEl = document.getElementById(`content-${tab}`);
-            if (contentEl) {
-                contentEl.classList.remove('hidden');
-            }
-            
-            // Add active state to clicked tab
-            const tabBtn = document.getElementById(`tab-${tab}`);
-            if (tabBtn) {
-                tabBtn.classList.add('tab-active', 'text-roamblr-green-500', 'bg-white');
-                tabBtn.classList.remove('text-roamblr-earth-600', 'bg-white/60');
-            }
-        }
-
-        // ===== Navbar Shadow on Scroll =====
-        const nav = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 10) {
-                nav.classList.add('shadow-md');
-            } else {
-                nav.classList.remove('shadow-md');
-            }
-        });
-
-        // ===== Dynamic Copyright Year =====
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // ===== Intersection Observer for Fade-in Animations =====
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in-up');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe all card-hover elements
-        document.querySelectorAll('.card-hover').forEach(card => {
-            observer.observe(card);
-        });
-
-        // ===== Lazy Load Images =====
-        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-            img.addEventListener('load', () => {
-                img.classList.add('lazy-loaded');
-            });
-        });
-
-        // ===== Pre-fill WhatsApp message based on page section =====
-        const whatsappLinks = document.querySelectorAll('a[href*="wa.me"]');
-        whatsappLinks.forEach(link => {
-            // The message is already set in the href
-            // This can be enhanced to dynamically set message based on context
-        });
-
-        console.log('🌍 Roamblr Safaris — Uganda Safari Experiences');
-        console.log('📍 Kampala, Uganda | roamblr.com');
-        console.log('🦍 Gorilla Trekking | Safari Packages | Ground Handling');
+        // Load components
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        
+        fetch('components/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+        
+        fetch('components/whatsapp-button.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('whatsapp-button').innerHTML = data);
     </script>
-
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
